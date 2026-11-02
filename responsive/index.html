@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Morgan — front-end developer building accessible, responsive digital experiences.">
+  <meta name="theme-color" content="#f7f8fc">
+  <title>Alex Morgan | Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem("portfolio-theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || preferred;
+      } catch (_) {}
+    })();
+  </script>
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Alex Morgan home"><span class="brand-mark">AM.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Toggle light and dark theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy reveal">
+        <p class="availability"><span class="status-dot"></span> AVAILABLE FOR NEW PROJECTS</p>
+        <p class="eyebrow">FRONT-END DEVELOPER · CREATIVE PROBLEM SOLVER</p>
+        <h1>Building digital experiences <span>that matter.</span></h1>
+        <p class="hero-intro">Hi, I'm <strong>Alex</strong> — a creative front-end developer crafting accessible, fast, and beautiful experiences for the modern web.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#contact">Let's talk <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="stats" aria-label="Career highlights">
+          <div><strong>3+</strong><span>Years creating</span></div>
+          <div><strong>20+</strong><span>Projects built</span></div>
+          <div><strong>100%</strong><span>Curiosity</span></div>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative abstract portfolio illustration">
+        <div class="art-glow"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card">
+          <div class="art-card-top"><span></span><span></span><span></span><small>creative.js</small></div>
+          <div class="code-lines">
+            <i class="line line-short"></i><i class="line line-long"></i><i class="line line-mid"></i>
+            <i class="line line-long accent-line"></i><i class="line line-short"></i><i class="line line-mid"></i>
+          </div>
+          <div class="art-card-bottom"><span class="mini-avatar">A</span><span>Designing with purpose</span><b>✦</b></div>
+        </div>
+        <div class="floating-chip chip-one">✳ UI / UX</div>
+        <div class="floating-chip chip-two">{" clean code "}</div>
+        <div class="floating-chip chip-three">CSS Grid</div>
+      </div>
+    </section>
+
+    <section class="section container about-section" id="about">
+      <div class="section-kicker"><span>01 / ABOUT ME</span><span class="kicker-line"></span></div>
+      <div class="about-grid">
+        <h2>Thoughtful design.<br><span>Powerful code.</span></h2>
+        <div class="about-copy">
+          <p>I'm passionate about transforming complex ideas into intuitive, engaging web experiences. I combine clean semantic HTML, modern CSS architecture, and JavaScript to build interfaces that work beautifully on every screen.</p>
+          <p>My approach focuses on accessibility, performance, and the small details that make digital products feel exceptional.</p>
+          <a class="text-link" href="#contact">Work with me <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-kicker"><span>02 / MY TOOLKIT</span><span class="kicker-line"></span></div>
+      <div class="section-heading">
+        <div><h2>Skills &amp; expertise</h2><p>Modern tools. Timeless fundamentals.</p></div>
+        <span class="heading-symbol" aria-hidden="true">⌘</span>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-icon">⌘</span><h3>HTML5</h3><p>Semantic structure, accessibility, and SEO-friendly markup.</p><span class="skill-number">01</span></article>
+        <article class="skill-card reveal"><span class="skill-icon">◈</span><h3>CSS3</h3><p>Grid, Flexbox, custom properties, and fluid responsive layouts.</p><span class="skill-number">02</span></article>
+        <article class="skill-card reveal"><span class="skill-icon">ϟ</span><h3>JavaScript</h3><p>Interactive interfaces and clean, maintainable code.</p><span class="skill-number">03</span></article>
+        <article class="skill-card reveal"><span class="skill-icon">◎</span><h3>UI / UX</h3><p>Visual hierarchy, thoughtful interactions, and user-centered design.</p><span class="skill-number">04</span></article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-kicker"><span>03 / SELECTED WORK</span><span class="kicker-line"></span></div>
+      <div class="section-heading">
+        <div><h2>Featured projects</h2><p>A few concepts I've loved bringing to life.</p></div>
+        <a class="text-link desktop-link" href="#contact">Have a project? <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-purple reveal">
+          <div class="project-visual dashboard-visual"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-side"></div><div class="mock-main"><b></b><div class="mock-chart"></div><div class="mock-bars"><i></i><i></i><i></i></div></div></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>01</span><span>HTML · CSS · JavaScript</span></div><h3>Studio Dashboard</h3><p>A clean analytics dashboard concept with responsive data cards.</p></div>
+        </article>
+        <article class="project-card project-peach reveal">
+          <div class="project-visual wellness-visual"><div class="phone-mock"><div class="phone-notch"></div><div class="sun-shape"></div><b>take a breath.</b><span>Make space for you.</span><div class="phone-pill"></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>02</span><span>Mobile-first · Flexbox</span></div><h3>Wellness Companion</h3><p>A mobile-first wellness app landing page with gentle visual details.</p></div>
+        </article>
+        <article class="project-card project-blue reveal">
+          <div class="project-visual workspace-visual"><div class="workspace-board"><div class="board-head"></div><div class="board-columns"><i></i><i></i><i></i></div><div class="board-dots">•••</div></div></div>
+          <div class="project-info"><div class="project-meta"><span>03</span><span>CSS Variables · Dark Mode</span></div><h3>Creative Workspace</h3><p>A flexible workspace interface with a theme-aware design system.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-wrap">
+        <div class="section-kicker"><span>04 / GET IN TOUCH</span><span class="kicker-line"></span></div>
+        <div class="contact-grid">
+          <div><p class="eyebrow">HAVE AN IDEA?</p><h2>Let's build<br><span>it together.</span></h2><p class="contact-description">Tell me about your project. Fill out the form and your email application will open with a prepared message.</p><a class="email-link" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a></div>
+          <form class="contact-form" id="contact-form">
+            <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+            <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+            <button class="button button-primary form-button" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite">Your message will be prepared in your default email application.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">AM.</span></a><p>© <span id="year"></span> Alex Morgan. Built with HTML, CSS &amp; JavaScript.</p><a class="back-top" href="#home">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
